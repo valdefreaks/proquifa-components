@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngFor="let item of items" class="item" [style.width]="item.percentage">
+    <div class="bar" [style.background-color]="item.color"></div>
+    <div class="title">
+      <div [style.background-color]="item.color"></div>
+      <label>{{ item.title }} {{ item.percentage }}</label>
+    </div>
+    <div class="subtitle">
+      <label [style.color]="item.color">{{ item.subtitle }}</label>
+    </div>
+  </div>
+</div>

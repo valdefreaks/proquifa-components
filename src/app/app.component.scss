@@ -1,0 +1,28 @@
+:host {
+  height: 100%;
+  width: 100%;
+
+  & > .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & > .top-container {
+      flex-shrink: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+      & > .bar-container {
+        width: 618px;
+      }
+    }
+    & > .bottom-container {
+      flex: 1;
+      padding: 50px;
+      & > .pop-up-container {
+        position: relative;
+      }
+    }
+  }
+}
