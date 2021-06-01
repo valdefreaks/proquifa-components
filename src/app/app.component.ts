@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { IPercentageBarItems } from './models/models';
+import { fadeInBottom } from './util/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  animations: [fadeInBottom],
 })
 export class AppComponent {
   title = 'proquifa-components';
-  popUpIsVisible = true;
+  popUpIsVisible = false;
   items: IPercentageBarItems[] = [
     {
       id: '1',
