@@ -18,10 +18,306 @@
       }
     }
     & > .bottom-container {
+      display: flex;
+      flex-direction: column;
       flex: 1;
-      padding: 50px;
+      padding: 20px;
       & > .pop-up-container {
         position: relative;
+      }
+      & > .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        & > div {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-right: 17px;
+
+          & > label {
+            font-size: 12px;
+          }
+
+          & > label:first-child {
+            margin-right: 4px;
+            font-weight: bold;
+          }
+
+          & > .oc {
+            color: #424242;
+          }
+          & > .vt {
+            color: #424242;
+          }
+          & > .fea-green {
+            color: #4ba92b;
+          }
+          & > .fea-yellow {
+            color: #e09c2c;
+          }
+          & > .fea-red {
+            color: #cc435e;
+          }
+          & > .fea-purple {
+            color: #6a6aae;
+          }
+        }
+        & > div:last-child {
+          margin-right: 0;
+        }
+      }
+      & > .item-list-container {
+        width: 600px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        & > .item-list {
+          display: flex;
+          flex: 1;
+          overflow: hidden;
+          flex-direction: column;
+          & > .item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border: 1px solid black;
+            & > .number {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: center;
+              padding: 10px 20px;
+              height: 100%;
+              & > label {
+                font-size: 20px;
+              }
+            }
+            & > .content {
+              flex: 1;
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              padding: 10px 10px 10px 0;
+              height: 100%;
+
+              & > .title {
+                font-size: 21px;
+                font-weight: bold;
+                color: #008894;
+              }
+              & > div {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+              }
+
+              & > .totals {
+                & > label {
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: #424242;
+
+                  &.sin-oc {
+                    color: #cc435e;
+                  }
+                }
+              }
+              & > .feas {
+                & > label {
+                  font-size: 14px;
+                  &.fea-green {
+                    color: #4ba92b;
+                  }
+                  &.fea-yellow {
+                    color: #e09c2c;
+                  }
+                  &.fea-red {
+                    color: #cc435e;
+                  }
+                  &.fea-purple {
+                    color: #6a6aae;
+                  }
+                }
+              }
+              & > .entries {
+                font-size: 13px;
+                color: #424242;
+              }
+            }
+            & > .arrow {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 10px 15px;
+              height: 100%;
+            }
+          }
+        }
+      }
+      & > .footer-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 65px;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 10px;
+        border: 1px solid black;
+        & > div {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-right: 17px;
+
+          &.fea {
+            align-items: flex-start;
+          }
+
+          & > label {
+            font-size: 12px;
+          }
+
+          & > label:first-child,
+          img {
+            margin-right: 4px;
+            font-weight: bold;
+          }
+
+          & > .oc {
+            color: #424242;
+          }
+          & > .vt {
+            color: #424242;
+          }
+          & > .fea-green {
+            color: #4ba92b;
+          }
+          & > .fea-yellow {
+            color: #e09c2c;
+          }
+          & > .fea-red {
+            color: #cc435e;
+          }
+          & > .fea-purple {
+            color: #6a6aae;
+          }
+        }
+        & > div:last-child {
+          margin-right: 0;
+        }
+      }
+      & > .buttons-container {
+        width: 100%;
+        height: 63px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+        & > div {
+          display: flex;
+          flex-direction: row;
+          & > button:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+      & > .item-list-container-2 {
+        width: 336px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        & > .item-list {
+          display: flex;
+          flex: 1;
+          overflow: hidden;
+          flex-direction: column;
+          & > .item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border: 1px solid black;
+            & > .selector {
+              width: 8px;
+              height: 100%;
+              background-color: #008894;
+            }
+            & > .content {
+              flex: 1;
+              position: relative;
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              padding: 17px;
+              height: 100%;
+
+              & > img {
+                position: absolute;
+                width: 60px;
+                height: 17px;
+                right: 17px;
+                top: 50%;
+                margin-top: -9px;
+              }
+
+              & > .title {
+                font-size: 21px;
+                font-weight: bold;
+                color: #008894;
+              }
+              & > div {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+              }
+
+              & > .totals {
+                & > label {
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: #424242;
+
+                  &.sin-oc {
+                    color: #cc435e;
+                  }
+                }
+              }
+              & > .feas {
+                & > label {
+                  font-size: 14px;
+                  &.fea-green {
+                    color: #4ba92b;
+                  }
+                  &.fea-yellow {
+                    color: #e09c2c;
+                  }
+                  &.fea-red {
+                    color: #cc435e;
+                  }
+                  &.fea-purple {
+                    color: #6a6aae;
+                  }
+                }
+              }
+              & > .entries {
+                font-size: 13px;
+                color: #424242;
+              }
+            }
+          }
+        }
       }
     }
   }
